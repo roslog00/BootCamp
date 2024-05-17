@@ -4,7 +4,7 @@ import SwiftUI
 struct BootCampApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(router: PublisherRouter())
+            ForAllTabBarView()
         }
     }
 }
