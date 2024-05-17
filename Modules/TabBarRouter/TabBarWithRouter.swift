@@ -24,12 +24,7 @@ struct ForAllTabBarView: View {
         ZStack(alignment: .bottom) {
             //Main TabBar For Screens
             TabView(selection: $router.selectionTabBar) {
-                Main()
-                    .tag(1)
-                Menu()
-                    .tag(2)
-                Settings()
-                    .tag(3)
+                
             }.ignoresSafeArea(.keyboard)
                 .onDisappear {
                     isAnimated = false
