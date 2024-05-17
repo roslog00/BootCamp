@@ -9,20 +9,22 @@
 /* Begin PBXBuildFile section */
 		0DC424382BF7951C00C78D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC424352BF7951C00C78D80 /* Assets.xcassets */; };
 		0DC424392BF7951C00C78D80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC424362BF7951C00C78D80 /* Preview Assets.xcassets */; };
-		0DC4243D2BF795A900C78D80 /* EnumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC4243C2BF795A900C78D80 /* EnumRouter.swift */; };
+		0DC4243D2BF795A900C78D80 /* EnumRouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC4243C2BF795A900C78D80 /* EnumRouterView.swift */; };
 		0DC4243F2BF7967600C78D80 /* BootCampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC4243E2BF7967600C78D80 /* BootCampApp.swift */; };
 		0DC424422BF7B4FA00C78D80 /* RouterEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC424412BF7B4FA00C78D80 /* RouterEnum.swift */; };
 		0DC424442BF7B52B00C78D80 /* RouterPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC424432BF7B52B00C78D80 /* RouterPublisher.swift */; };
+		0DC424472BF7B6BD00C78D80 /* TabBarWithRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC424462BF7B6BD00C78D80 /* TabBarWithRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D75265D2BF793170039F32D /* TestingBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC424352BF7951C00C78D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DC424362BF7951C00C78D80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0DC4243C2BF795A900C78D80 /* EnumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumRouter.swift; sourceTree = "<group>"; };
+		0DC4243C2BF795A900C78D80 /* EnumRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumRouterView.swift; sourceTree = "<group>"; };
 		0DC4243E2BF7967600C78D80 /* BootCampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootCampApp.swift; sourceTree = "<group>"; };
 		0DC424412BF7B4FA00C78D80 /* RouterEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterEnum.swift; sourceTree = "<group>"; };
 		0DC424432BF7B52B00C78D80 /* RouterPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterPublisher.swift; sourceTree = "<group>"; };
+		0DC424462BF7B6BD00C78D80 /* TabBarWithRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWithRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				0DC4243E2BF7967600C78D80 /* BootCampApp.swift */,
-				0DC424402BF7B4E500C78D80 /* Router */,
 				0DC4243A2BF7956000C78D80 /* Modules */,
 				0D75266E2BF793240039F32D /* Resources */,
 				0D75265E2BF793170039F32D /* Products */,
@@ -75,17 +76,19 @@
 		0DC4243A2BF7956000C78D80 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				0DC4243B2BF7957200C78D80 /* EnumToView */,
+				0DC424452BF7B6AC00C78D80 /* TabBarRouter */,
+				0DC4243B2BF7957200C78D80 /* EnumRouter */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		0DC4243B2BF7957200C78D80 /* EnumToView */ = {
+		0DC4243B2BF7957200C78D80 /* EnumRouter */ = {
 			isa = PBXGroup;
 			children = (
-				0DC4243C2BF795A900C78D80 /* EnumRouter.swift */,
+				0DC4243C2BF795A900C78D80 /* EnumRouterView.swift */,
+				0DC424402BF7B4E500C78D80 /* Router */,
 			);
-			path = EnumToView;
+			path = EnumRouter;
 			sourceTree = "<group>";
 		};
 		0DC424402BF7B4E500C78D80 /* Router */ = {
@@ -95,6 +98,14 @@
 				0DC424432BF7B52B00C78D80 /* RouterPublisher.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		0DC424452BF7B6AC00C78D80 /* TabBarRouter */ = {
+			isa = PBXGroup;
+			children = (
+				0DC424462BF7B6BD00C78D80 /* TabBarWithRouter.swift */,
+			);
+			path = TabBarRouter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC4243F2BF7967600C78D80 /* BootCampApp.swift in Sources */,
-				0DC4243D2BF795A900C78D80 /* EnumRouter.swift in Sources */,
+				0DC424472BF7B6BD00C78D80 /* TabBarWithRouter.swift in Sources */,
+				0DC4243D2BF795A900C78D80 /* EnumRouterView.swift in Sources */,
 				0DC424422BF7B4FA00C78D80 /* RouterEnum.swift in Sources */,
 				0DC424442BF7B52B00C78D80 /* RouterPublisher.swift in Sources */,
 			);

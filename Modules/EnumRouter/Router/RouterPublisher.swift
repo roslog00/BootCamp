@@ -1,5 +1,5 @@
 import SwiftUI
 
-final class Router: ObservableObject {
+final class PublisherRouter: ObservableObject {
     @Published var router = RouterEnum.main
 }

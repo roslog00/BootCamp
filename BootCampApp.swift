@@ -3,7 +3,7 @@ import SwiftUI
 
 @main
 struct BootCampApp: App {
-    @StateObject var router = Router()
+    @StateObject var router = PublisherRouter()
     
     var body: some Scene {
         WindowGroup {
